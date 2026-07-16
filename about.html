@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About Kee Whole | Car & Bike Accessories Shop — Parklands, Nairobi</title>
+<meta name="description" content="Kee Whole is a Nairobi-based accessories business in Parklands specialising in car mats, Android head units, vinyl decals, PPF, tinting, phone skins and bike accessories. Cars. Bikes. Passion..">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c10;--panel:#12151e;--panel2:#181c28;--red:#e8392a;--teal:#00d4aa;--gold:#c9922a;--text:#f2f4fb;--dim:#8891b0;--line:rgba(255,255,255,0.07);--r:16px;}
+*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;}
+a{color:inherit;text-decoration:none;}img{display:block;}
+header{position:sticky;top:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.logo-link img{height:36px;width:auto;}
+nav ul{display:flex;gap:24px;list-style:none;}
+nav a{font-size:.88rem;color:var(--dim);transition:color .2s;}
+nav a:hover,nav a.active{color:var(--teal);}
+.nav-btns{display:flex;gap:10px;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:100px;font-size:.88rem;font-weight:600;white-space:nowrap;transition:transform .15s,box-shadow .15s;}
+.btn:hover{transform:translateY(-2px);}
+.btn-red{background:var(--red);color:#fff;}.btn-red:hover{box-shadow:0 6px 22px rgba(232,57,42,.4);}
+.btn-outline{border:1px solid var(--line);color:var(--text);}.btn-outline:hover{border-color:var(--teal);color:var(--teal);}
+
+.page-hero{max-width:1180px;margin:0 auto;padding:72px 24px 56px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;}
+.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--teal);}
+.page-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:18px;}
+.page-hero h1 span{color:var(--red);}
+.page-hero p{color:var(--dim);font-size:1rem;line-height:1.75;margin-bottom:28px;}
+.hero-img{border-radius:20px;overflow:hidden;border:1px solid var(--line);}
+.hero-img img{width:100%;height:380px;object-fit:cover;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px;}
+
+/* Story section */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:64px 24px;max-width:1180px;margin:0 auto;border-top:1px solid var(--line);}
+.story-text h2{font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;margin-bottom:18px;}
+.story-text p{color:var(--dim);font-size:.96rem;line-height:1.8;margin-bottom:14px;}
+
+/* Values */
+.values-section{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 24px;}
+.values-inner{max-width:1180px;margin:0 auto;}
+.values-inner h2{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:700;margin-bottom:8px;}
+.values-inner>p{color:var(--dim);font-size:.95rem;margin-bottom:44px;}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.val-card{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;}
+.val-icon{font-size:1.8rem;margin-bottom:14px;}
+.val-card h3{font-size:1rem;font-weight:700;margin-bottom:10px;}
+.val-card p{color:var(--dim);font-size:.87rem;line-height:1.6;}
+
+/* Numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);}
+.num-item{padding:40px 24px;border-right:1px solid var(--line);text-align:center;}
+.num-item:last-child{border-right:none;}
+.num-item .big{font-family:'Space Grotesk',sans-serif;font-size:2.4rem;font-weight:700;color:var(--red);margin-bottom:6px;}
+.num-item p{color:var(--dim);font-size:.85rem;line-height:1.5;}
+
+/* CTA strip */
+.cta-strip{text-align:center;padding:80px 24px;max-width:1180px;margin:0 auto;}
+.cta-strip h2{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;margin-bottom:12px;}
+.cta-strip p{color:var(--dim);font-size:.96rem;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-lg{padding:14px 28px;font-size:.96rem;}
+
+footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;}
+.footer-logo{display:flex;justify-content:center;margin-bottom:14px;}
+.footer-logo img{height:44px;}
+footer p{color:var(--dim);font-size:.84rem;}
+.footer-links{display:flex;justify-content:center;gap:20px;margin-top:12px;flex-wrap:wrap;}
+.footer-links a{color:var(--dim);font-size:.82rem;transition:color .2s;}.footer-links a:hover{color:var(--teal);}
+
+@media(max-width:860px){
+  nav ul{display:none;}.nav-btns .btn-outline{display:none;}
+  .page-hero{grid-template-columns:1fr;padding-top:48px;}
+  .story-grid{grid-template-columns:1fr;}
+  .values-grid{grid-template-columns:1fr;}
+  .numbers{grid-template-columns:repeat(2,1fr);}
+  .num-item:nth-child(2){border-right:none;}
+  .num-item:nth-child(3){border-top:1px solid var(--line);}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo-link"><img src="img/logo.png" alt="Kee Whole" style="height:52px;width:auto;"></a>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="what-we-offer.html">What We Offer</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <div class="nav-btns">
+      <a class="btn btn-outline" href="tel:+254746432962">📞 Call</a>
+      <a class="btn btn-red" href="https://wa.me/254746432962" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="page-hero">
+    <div>
+      <div class="eyebrow">Our story</div>
+      <h1>One shop. <span>Eight categories.</span> Zero runaround.</h1>
+      <p>Kee Whole was built on a simple frustration — Nairobi car owners had to visit five different shops to sort out their mats, stereo, tinting, stickers and bike gear. We fixed that. One location in Parklands, everything handled, everyone served.</p>
+      <div class="cta-btns" style="justify-content:flex-start;margin-bottom:0;">
+        <a class="btn btn-red btn-lg" href="https://wa.me/254746432962" target="_blank" rel="noopener">Talk to us on WhatsApp</a>
+        <a class="btn btn-outline btn-lg" href="what-we-offer.html">See what we offer</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/hilux-hero.jpg" alt="Kee Whole Parklands Nairobi — car accessories and vinyl decals">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="story-grid">
+    <div class="story-text">
+      <div class="eyebrow">Who we are</div>
+      <h2>Born in Parklands, built for Nairobi</h2>
+      <p>Kee Whole started as Smart Autos — a small operation in Parklands focused on car accessories. As the business grew, so did the categories: from floor mats and stereo installations to window tinting, PPF, vinyl decal stickers, phone skins, bicycle accessories and full frame wraps.</p>
+      <p>The rebrand to Kee Whole wasn't just cosmetic. It was a declaration — that everything a car owner, cyclist, or device user needs should orbit around one trusted shop. The name and logo say it all: Cars. Bikes. Passion..</p>
+      <p>Today we serve clients across Nairobi and deliver nationwide across Kenya — from Land Cruiser owners in Karen to road cyclists in Kilimani, to students who want a custom laptop skin in Mombasa.</p>
+    </div>
+    <div>
+      <img src="img/floor-mat.jpg" alt="5D car floor mats from Kee Whole Nairobi" style="border-radius:16px;width:100%;border:1px solid var(--line);">
+    </div>
+  </div>
+</section>
+
+<section class="values-section">
+  <div class="values-inner">
+    <div class="eyebrow" style="margin-bottom:14px;">What drives us</div>
+    <h2>Our values</h2>
+    <p>Three things define how we operate at Kee Whole.</p>
+    <div class="values-grid">
+      <div class="val-card">
+        <div class="val-icon">🎯</div>
+        <h3>Honest over everything</h3>
+        <p>We tell you what you actually need, not what earns us the most. If a product isn't the right fit for your car or device, we say so. Trust is more valuable than a single sale.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">⚙️</div>
+        <h3>We finish what we start</h3>
+        <p>Every install is done clean — no loose wires, no bubbles, no gaps. We don't hand you a part and disappear. Fitting and after-support are part of the deal.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🚀</div>
+        <h3>Always expanding</h3>
+        <p>We're not standing still. We started with mats. We added stereo. Then decals, PPF, skins, bike gear. If there's something Nairobi needs that we can do well, we add it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="numbers">
+    <div class="num-item">
+      <div class="big">8+</div>
+      <p>Product and service categories under one roof</p>
+    </div>
+    <div class="num-item">
+      <div class="big">47+</div>
+      <p>Vehicle models supported for custom car mats</p>
+    </div>
+    <div class="num-item">
+      <div class="big">KE</div>
+      <p>Nationwide delivery across Kenya — not just Nairobi</p>
+    </div>
+    <div class="num-item">
+      <div class="big">1</div>
+      <p>Location — Parklands, Nairobi — easy to reach, easy to order</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta-strip">
+    <div class="eyebrow" style="justify-content:center;">Ready?</div>
+    <h2>Let's sort your car, bike or device</h2>
+    <p>WhatsApp is the fastest way — tell us your model and what you need and we'll get back to you same day with pricing.</p>
+    <div class="cta-btns">
+      <a class="btn btn-red btn-lg" href="https://wa.me/254746432962" target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+      <a class="btn btn-outline btn-lg" href="what-we-offer.html">Browse products & prices</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo"><img src="img/logo.png" alt="Kee Whole" style="height:60px;width:auto;"></div>
+  <p>Cars. Bikes. Passion. · Parklands, Nairobi, Kenya</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="what-we-offer.html">What We Offer</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+  <p style="margin-top:16px;">© <span id="yr"></span> Kee Whole.</p>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
