@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Products & Prices | Kee Whole Nairobi — Car Mats, Stereo, Stickers, PPF, Skins & Bike</title>
+<meta name="description" content="Full product and pricing list from Kee Whole Nairobi — 3D/5D car mats from Ksh 3,000, Android head unit installation from Ksh 9,500, PPF, tinting, vinyl decals, phone skins, bike accessories and more.">
+<link rel="canonical" href="https://keewhole.github.io/keewhole-site/what-we-offer.html">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c10;--panel:#12151e;--panel2:#181c28;--red:#e8392a;--teal:#00d4aa;--gold:#c9922a;--text:#f2f4fb;--dim:#8891b0;--line:rgba(255,255,255,0.07);--r:16px;}
+*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;}
+a{color:inherit;text-decoration:none;}img{display:block;}
+header{position:sticky;top:0;z-index:100;background:rgba(10,12,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.logo-link img{height:36px;width:auto;}
+nav ul{display:flex;gap:24px;list-style:none;}
+nav a{font-size:.88rem;color:var(--dim);transition:color .2s;}
+nav a:hover,nav a.active{color:var(--teal);}
+.nav-btns{display:flex;gap:10px;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:100px;font-size:.88rem;font-weight:600;white-space:nowrap;transition:transform .15s,box-shadow .15s;}
+.btn:hover{transform:translateY(-2px);}
+.btn-red{background:var(--red);color:#fff;}.btn-red:hover{box-shadow:0 6px 22px rgba(232,57,42,.4);}
+.btn-outline{border:1px solid var(--line);color:var(--text);}.btn-outline:hover{border-color:var(--teal);color:var(--teal);}
+.btn-sm{padding:10px 20px;font-size:.84rem;}
+
+.page-hero{max-width:1180px;margin:0 auto;padding:64px 24px 48px;text-align:center;}
+.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;}
+.eyebrow::before,.eyebrow::after{content:'';width:22px;height:1px;background:var(--teal);}
+.page-hero h1{font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:12px;}
+.page-hero p{color:var(--dim);font-size:.98rem;line-height:1.7;max-width:600px;margin:0 auto 28px;}
+
+/* Jump nav */
+.jump-nav{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;padding:0 24px 48px;}
+.jp{padding:7px 17px;border-radius:100px;border:1px solid var(--line);font-size:.8rem;color:var(--dim);transition:all .2s;}
+.jp:hover{border-color:var(--teal);color:var(--teal);}
+
+/* Product sections */
+.ps{max-width:1180px;margin:0 auto;padding:0 24px 72px;}
+.ps-header{display:flex;align-items:center;gap:16px;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--line);}
+.ps-num{font-family:'Space Grotesk',sans-serif;color:var(--red);font-size:.75rem;font-weight:700;letter-spacing:.1em;}
+.ps-header h2{font-size:clamp(1.3rem,2.2vw,1.75rem);font-weight:700;}
+.ps-body{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
+.ps-body.rev{direction:rtl;}.ps-body.rev>*{direction:ltr;}
+
+/* Photo carousel for decals */
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.photo-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;border:1px solid var(--line);}
+.photo-grid.wide{grid-template-columns:repeat(2,1fr);}
+.photo-single img{width:100%;border-radius:14px;border:1px solid var(--line);object-fit:cover;}
+
+/* Price table */
+.price-table{width:100%;border-collapse:collapse;margin:16px 0;}
+.price-table th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);padding:10px 14px;border-bottom:1px solid var(--line);}
+.price-table td{padding:12px 14px;font-size:.9rem;border-bottom:1px solid var(--line);}
+.price-table tr:last-child td{border-bottom:none;}
+.price-table td:last-child{color:var(--gold);font-weight:600;white-space:nowrap;}
+.price-table tr:hover td{background:rgba(255,255,255,0.03);}
+.note{background:rgba(0,212,170,.06);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 16px;font-size:.85rem;color:var(--dim);line-height:1.6;margin-top:16px;}
+.note strong{color:var(--teal);}
+.order-btn{margin-top:20px;}
+
+/* Skin textures gallery */
+.skin-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;}
+.skin-gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;border:1px solid var(--line);}
+
+/* Stickers in-stock grid */
+.sticker-in-stock{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;}
+.stk{border-radius:10px;overflow:hidden;border:1px solid var(--line);position:relative;}
+.stk img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.stk .badge{position:absolute;top:8px;right:8px;background:var(--gold);color:#1a0e00;font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:100px;}
+
+footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;}
+.footer-logo{display:flex;justify-content:center;margin-bottom:14px;}
+.footer-logo img{height:44px;}
+footer p{color:var(--dim);font-size:.84rem;}
+.footer-links{display:flex;justify-content:center;gap:20px;margin-top:12px;flex-wrap:wrap;}
+.footer-links a{color:var(--dim);font-size:.82rem;transition:color .2s;}.footer-links a:hover{color:var(--teal);}
+
+@media(max-width:860px){
+  nav ul{display:none;}.nav-btns .btn-outline{display:none;}
+  .ps-body{grid-template-columns:1fr;}.ps-body.rev{direction:ltr;}
+  .photo-grid{grid-template-columns:repeat(2,1fr);}
+  .sticker-in-stock{grid-template-columns:repeat(2,1fr);}
+  .skin-gallery{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:480px){
+  .photo-grid{grid-template-columns:1fr 1fr;}
+  .skin-gallery{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo-link"><img src="img/logo.png" alt="Kee Whole" style="height:52px;width:auto;"></a>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="what-we-offer.html" class="active">What We Offer</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <div class="nav-btns">
+      <a class="btn btn-outline" href="tel:+254746432962">📞 Call</a>
+      <a class="btn btn-red" href="https://wa.me/254746432962" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="eyebrow">Products & Services</div>
+  <h1>Everything we offer — with prices</h1>
+  <p>Eight product and service lines, all from Parklands, Nairobi. Prices shown are standard starting rates — WhatsApp us with your specific car or device model for an exact quote.</p>
+</div>
+
+<div class="jump-nav">
+  <a class="jp" href="#mats">Car Mats</a>
+  <a class="jp" href="#stereo">Stereo & Android</a>
+  <a class="jp" href="#ppf">Tinting & PPF</a>
+  <a class="jp" href="#car-decals">Car Vinyl Stickers</a>
+  <a class="jp" href="#skins">Phone & Laptop Skins</a>
+  <a class="jp" href="#bike-decals">Bike Decals</a>
+  <a class="jp" href="#bike-accessories">Bike Accessories</a>
+  <a class="jp" href="#accessories">Car Accessories</a>
+</div>
+
+<!-- 01 CAR MATS -->
+<div class="ps" id="mats">
+  <div class="ps-header"><span class="ps-num">01</span><h2>Car Floor Mats</h2></div>
+
+  <!-- Intro -->
+  <p style="color:var(--dim);font-size:.95rem;line-height:1.75;margin-bottom:36px;max-width:760px;">
+    We carry three types of floor mats — 5D, 3D, and Universal — each suited to different vehicles and budgets. All are waterproof, anti-slip, and wipe clean in seconds. WhatsApp us your car model to confirm the right fit.
+  </p>
+
+  <!-- Subcategory tabs row -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px;">
+
+    <!-- 5D -->
+    <div id="mats-5d" style="background:var(--panel);border:1px solid rgba(232,57,42,.35);border-radius:var(--r);padding:28px 24px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <span style="background:var(--red);color:#fff;font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.06em;">5D MATS</span>
+        <span style="font-size:.8rem;color:var(--teal);">Premium</span>
+      </div>
+      <div style="width:100%;height:160px;background:var(--panel2);border-radius:10px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:.82rem;margin-bottom:16px;">
+        5D mat photo coming soon
+      </div>
+      <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:10px;">5D Floor Mats</h3>
+      <p style="color:var(--dim);font-size:.87rem;line-height:1.6;margin-bottom:16px;">
+        Covers the flat floor <strong style="color:var(--text);">and</strong> the side walls of each footwell — maximum protection, zero gaps. Best for Land Cruiser, Prado, Defender and heavy-use vehicles.
+      </p>
+      <!-- Content goes here -->
+      <p style="color:var(--dim);font-size:.8rem;font-style:italic;margin-bottom:16px;">More details and vehicle options coming soon.</p>
+      <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20need%205D%20floor%20mats.%20My%20car%20is%3A" target="_blank" rel="noopener">Order 5D Mats</a>
+    </div>
+
+    <!-- 3D -->
+    <div id="mats-3d" style="background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <span style="background:var(--panel2);color:var(--text);border:1px solid var(--line);font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.06em;">3D MATS</span>
+        <span style="font-size:.8rem;color:var(--teal);">Standard</span>
+      </div>
+      <div style="width:100%;height:160px;background:var(--panel2);border-radius:10px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:.82rem;margin-bottom:16px;">
+        3D mat photo coming soon
+      </div>
+      <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:10px;">3D Floor Mats</h3>
+      <p style="color:var(--dim);font-size:.87rem;line-height:1.6;margin-bottom:16px;">
+        Precision-cut to fit your exact model's flat footwell area. Lightweight, easy to remove and rinse — great for everyday use across most saloon and SUV models.
+      </p>
+      <!-- Content goes here -->
+      <p style="color:var(--dim);font-size:.8rem;font-style:italic;margin-bottom:16px;">More details and vehicle options coming soon.</p>
+      <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20need%203D%20floor%20mats.%20My%20car%20is%3A" target="_blank" rel="noopener">Order 3D Mats</a>
+    </div>
+
+    <!-- Universal -->
+    <div id="mats-universal" style="background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <span style="background:var(--panel2);color:var(--text);border:1px solid var(--line);font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.06em;">UNIVERSAL</span>
+        <span style="font-size:.8rem;color:var(--teal);">Budget-friendly</span>
+      </div>
+      <div style="width:100%;height:160px;background:var(--panel2);border-radius:10px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:.82rem;margin-bottom:16px;">
+        Universal mat photo coming soon
+      </div>
+      <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:10px;">Universal Floor Mats</h3>
+      <p style="color:var(--dim);font-size:.87rem;line-height:1.6;margin-bottom:16px;">
+        Fits most vehicles without model-specific cutting. A practical, affordable option for basic floor protection — good for older or multi-use cars.
+      </p>
+      <!-- Content goes here -->
+      <p style="color:var(--dim);font-size:.8rem;font-style:italic;margin-bottom:16px;">More details coming soon.</p>
+      <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20need%20universal%20floor%20mats.%20My%20car%20is%3A" target="_blank" rel="noopener">Order Universal Mats</a>
+    </div>
+
+  </div>
+
+  <!-- Shared fitment note -->
+  <div class="note" style="max-width:760px;">
+    <strong>Fitment:</strong> Land Cruiser 200/300, Prado, Defender, Hilux, Jimny, Fielder, Axio, Corolla, RAV4, X-Trail, CX-5, Mazda 6, Premio, and many more. WhatsApp us your car model to confirm which type fits best.
+  </div>
+</div>
+
+<!-- 02 STEREO -->
+<div class="ps" id="stereo" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:100%;padding:56px 0;">
+<div class="ps" style="padding-bottom:0;">
+  <div class="ps-header"><span class="ps-num">02</span><h2>Stereo & Android Head Units</h2></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin-bottom:36px;">
+    <div class="photo-single"><img src="img/stereo-1.jpg" alt="Android head unit installation Nairobi — Kee Whole" loading="lazy"></div>
+    <div>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:20px;">We supply and fit Android head units for every major car model — run Google Maps, Spotify, YouTube and WhatsApp calls on your dashboard. All prices include the unit and professional installation at our Parklands shop.</p>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:24px;">Tap your car model below to see compatible units, screen sizes, specs, and exact fitted prices.</p>
+      <a class="btn btn-red" href="stereo.html" style="font-size:.95rem;padding:14px 28px;">
+        Browse by car model →
+      </a>
+    </div>
+  </div>
+
+  <!-- Quick car grid teaser -->
+  <p style="font-family:'Space Grotesk',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:16px;">Popular models — click to see units & prices</p>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;">
+    <a href="stereo.html#detail-crown" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s,color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Toyota Crown</a>
+    <a href="stereo.html#detail-fielder" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Fielder</a>
+    <a href="stereo.html#detail-prado" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Prado</a>
+    <a href="stereo.html#detail-landcruiser" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Land Cruiser</a>
+    <a href="stereo.html#detail-hilux" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Hilux</a>
+    <a href="stereo.html#detail-harrier" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Harrier</a>
+    <a href="stereo.html#detail-forester" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Subaru</a>
+    <a href="stereo.html#detail-crv" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Honda CR-V</a>
+    <a href="stereo.html#detail-xtrail" style="background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;transition:border-color .2s;" onmouseover="this.style.borderColor='rgba(232,57,42,.5)'" onmouseout="this.style.borderColor='var(--line)'">Nissan X-Trail</a>
+    <a href="stereo.html" style="background:rgba(232,57,42,.1);border:1px solid rgba(232,57,42,.3);border-radius:10px;padding:14px 10px;text-align:center;font-size:.82rem;font-weight:600;color:var(--red);">All models →</a>
+  </div>
+
+  <div class="note"><strong>Installation:</strong> All units fitted professionally at our Parklands shop. WhatsApp us your car model, year and trim to confirm compatibility before visiting.</div>
+</div>
+</div>
+
+<!-- 03 TINTING & PPF -->
+<div class="ps" id="ppf" style="padding-top:56px;">
+  <div class="ps-header"><span class="ps-num">03</span><h2>Window Tinting & Paint Protection Film (PPF)</h2></div>
+
+  <!-- Photos -->
+  <div class="photo-grid" style="grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:40px;">
+    <img src="img/ppf-1.jpg" alt="PPF Range Rover Nairobi — Kee Whole" loading="lazy" style="border-radius:10px;border:1px solid var(--line);width:100%;aspect-ratio:3/4;object-fit:cover;">
+    <img src="img/ppf-2.jpg" alt="PPF film application — Kee Whole Nairobi" loading="lazy" style="border-radius:10px;border:1px solid var(--line);width:100%;aspect-ratio:3/4;object-fit:cover;">
+    <img src="img/ppf-3.jpg" alt="PPF close up — Kee Whole" loading="lazy" style="border-radius:10px;border:1px solid var(--line);width:100%;aspect-ratio:3/4;object-fit:cover;">
+    <img src="img/ppf-4.jpg" alt="PPF door panel — Kee Whole Nairobi" loading="lazy" style="border-radius:10px;border:1px solid var(--line);width:100%;aspect-ratio:3/4;object-fit:cover;">
+  </div>
+
+  <p style="color:var(--dim);font-size:.93rem;line-height:1.75;margin-bottom:36px;max-width:800px;">
+    <strong style="color:var(--text);">PPF (Paint Protection Film)</strong> is a clear, self-healing film applied directly over your car's paintwork — permanently protecting against stone chips, scratches, bird droppings, and UV fade without changing how the car looks.
+    <strong style="color:var(--text);">Window tinting</strong> blocks heat, reduces glare, and adds privacy. Both services are applied on-site at our Parklands shop.
+  </p>
+
+  <!-- Window Tinting -->
+  <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;color:var(--text);">Window Tinting</h3>
+  <table class="price-table" style="margin-bottom:36px;">
+    <tr><th>Service</th><th>Starting Price</th></tr>
+    <tr><td>Windscreen only</td><td>From Ksh 2,500</td></tr>
+    <tr><td>Saloon / Sedan (all windows)</td><td>From Ksh 6,500</td></tr>
+    <tr><td>SUV / 4x4 (all windows)</td><td>From Ksh 9,000</td></tr>
+    <tr><td>Van / MPV (all windows)</td><td>From Ksh 10,000</td></tr>
+  </table>
+
+  <!-- PPF packages -->
+  <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;color:var(--text);">Paint Protection Film (PPF) — Packages</h3>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px;">
+
+    <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;">
+      <div style="font-size:.7rem;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;font-weight:600;">Individual Panels</div>
+      <table class="price-table">
+        <tr><th>Panel</th><th>From</th></tr>
+        <tr><td>Headlights (pair)</td><td>Ksh 10,000</td></tr>
+        <tr><td>Front bumper</td><td>Ksh 18,000</td></tr>
+        <tr><td>Hood / bonnet</td><td>Ksh 22,000</td></tr>
+        <tr><td>Mirrors (pair)</td><td>Ksh 8,000</td></tr>
+        <tr><td>Door edges</td><td>Ksh 6,000</td></tr>
+        <tr><td>Roof</td><td>Ksh 25,000</td></tr>
+        <tr><td>Boot / rear bumper</td><td>Ksh 15,000</td></tr>
+      </table>
+    </div>
+
+    <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;">
+      <div style="font-size:.7rem;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;font-weight:600;">Packages</div>
+      <table class="price-table">
+        <tr><th>Package</th><th>From</th></tr>
+        <tr><td>Lights + Front Bumper</td><td>Ksh 25,000</td></tr>
+        <tr><td>Full Front (bumper + hood + mirrors + lights)</td><td>Ksh 55,000</td></tr>
+        <tr><td>Front + Doors</td><td>Ksh 90,000</td></tr>
+        <tr><td>¾ Body (front + doors + roof)</td><td>Ksh 160,000</td></tr>
+        <tr><td>Full Body PPF</td><td>From Ksh 250,000</td></tr>
+      </table>
+    </div>
+
+    <div style="background:rgba(232,57,42,.05);border:1px solid rgba(232,57,42,.25);border-radius:var(--r);padding:24px;">
+      <div style="font-size:.7rem;color:var(--red);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;font-weight:600;">Premium / Luxury</div>
+      <p style="color:var(--dim);font-size:.85rem;line-height:1.6;margin-bottom:14px;">For Range Rover, Land Cruiser 300, BMW, Mercedes-Benz, Porsche and other high-value vehicles — pricing is tailored to the car and panel complexity.</p>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>Headlights — Luxury</td><td>From Ksh 15,000</td></tr>
+        <tr><td>Full Front — Luxury</td><td>From Ksh 80,000</td></tr>
+        <tr><td>Full Body — Luxury</td><td>Custom quote</td></tr>
+      </table>
+      <p style="color:var(--dim);font-size:.8rem;margin-top:12px;">PPF is the best investment you can make on a luxury car. Paint correction + respray costs significantly more.</p>
+    </div>
+
+  </div>
+
+  <div class="note" style="margin-bottom:24px;"><strong>Note:</strong> All prices are starting rates and depend on car size, panel condition, and film brand selected. WhatsApp your car and the package you want for an exact quote.</div>
+
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20PPF.%20My%20car%20is%3A%20%0APackage%20I%27m%20interested%20in%3A" target="_blank" rel="noopener">Get PPF Quote</a>
+    <a class="btn btn-outline btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20window%20tinting.%20My%20car%20is%3A" target="_blank" rel="noopener">Book Tinting</a>
+  </div>
+</div>
+
+<!-- 04 CAR VINYL STICKERS -->
+<div class="ps" id="car-decals" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:100%;padding:56px 0;">
+<div class="ps" style="padding-bottom:0;">
+  <div class="ps-header"><span class="ps-num">04</span><h2>Car Vinyl Decal Stickers</h2></div>
+  <div>
+    <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:24px;max-width:700px;">Premium cast vinyl stickers and decals for cars — from window cutouts and B-pillar wraps to sunroof vinyl, hood decals, mirror stickers, and full body accents. Toyota Land Cruiser designs are ready now in Parklands. The designs below are examples of what we cut — custom orders can match any of these styles.</p>
+
+    <p style="font-family:'Space Grotesk',sans-serif;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;">In stock now — Land Cruiser designs</p>
+    <div class="sticker-in-stock">
+      <div class="stk"><img src="img/sticker-1.jpg" alt="Toyota Land Cruiser Comfort Power Prestige vinyl sticker" loading="lazy"><span class="badge">In Stock</span></div>
+      <div class="stk"><img src="img/sticker-2.jpg" alt="Toyota Land Cruiser mountain vinyl decal" loading="lazy"><span class="badge">In Stock</span></div>
+      <div class="stk"><img src="img/sticker-3.jpg" alt="Toyota Land Cruiser Go Anywhere vinyl sticker" loading="lazy"><span class="badge">In Stock</span></div>
+      <div class="stk"><img src="img/sticker-4.jpg" alt="Toyota Land Cruiser Power Durability Legend" loading="lazy"><span class="badge">In Stock</span></div>
+      <div class="stk"><img src="img/sticker-5.jpg" alt="Toyota Land Cruiser Built for Tough sticker" loading="lazy"><span class="badge">In Stock</span></div>
+    </div>
+
+    <p style="font-family:'Space Grotesk',sans-serif;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin:24px 0 14px;">Custom design examples — we can cut these styles</p>
+    <div class="photo-grid">
+      <img src="img/decal-sunflower.jpg" alt="Sunflower quarter window vinyl decal example" loading="lazy">
+      <img src="img/decal-hood-flame.jpg" alt="Flame hood decal car example" loading="lazy">
+      <img src="img/decal-sunroof-rose.jpg" alt="Rose stained glass sunroof vinyl example" loading="lazy">
+      <img src="img/decal-pillar-hex.jpg" alt="Hexagon B-pillar vinyl wrap example" loading="lazy">
+      <img src="img/decal-hex-purple.jpg" alt="Purple holographic hexagon window decal example" loading="lazy">
+      <img src="img/decal-floral.jpg" alt="Floral car quarter window decal example" loading="lazy">
+      <img src="img/decal-palm.jpg" alt="Palm sunset car window vinyl example" loading="lazy">
+      <img src="img/decal-bats.jpg" alt="Bats sunroof vinyl decal example" loading="lazy">
+      <img src="img/decal-skull.jpg" alt="Skull window vinyl sticker example" loading="lazy">
+    </div>
+
+    <table class="price-table" style="margin-top:24px;">
+      <tr><th>Product</th><th>Price</th></tr>
+      <tr><td>Small decal sticker (nameplate size)</td><td>Ksh 500 – 1,500</td></tr>
+      <tr><td>Quarter window decal</td><td>Ksh 2,000 – 4,500</td></tr>
+      <tr><td>B-pillar wrap (both sides)</td><td>Ksh 3,000 – 5,500</td></tr>
+      <tr><td>Hood decal / accent</td><td>Ksh 3,500 – 8,500</td></tr>
+      <tr><td>Sunroof vinyl (inside view)</td><td>Ksh 3,500 – 7,000</td></tr>
+      <tr><td>Mirror sticker set</td><td>Ksh 1,500 – 3,000</td></tr>
+      <tr><td>Full custom design (bespoke)</td><td>WhatsApp for quote</td></tr>
+    </table>
+    <div class="note"><strong>Note:</strong> Prices vary by size and vinyl type. WhatsApp us the position on your car + approximate size for an exact quote. We print and cut in-house.</div>
+    <div class="order-btn" style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20a%20car%20vinyl%20sticker" target="_blank" rel="noopener">Order Car Stickers</a>
+      <a class="btn btn-outline btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20a%20custom%20car%20decal" target="_blank" rel="noopener">Custom Order</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 05 PHONE & LAPTOP SKINS -->
+<div class="ps" id="skins" style="padding-top:56px;">
+  <div class="ps-header"><span class="ps-num">05</span><h2>Phone, Laptop & Surface Skins</h2></div>
+  <div class="ps-body">
+    <div>
+      <img src="img/phone-skin.jpg" alt="Custom phone skin wrap — Kee Whole Nairobi" loading="lazy" style="border-radius:14px;border:1px solid var(--line);width:100%;margin-bottom:12px;">
+      <div class="skin-gallery">
+        <img src="img/skin-gold-flow.jpg" alt="Dark blue gold flow phone skin design" loading="lazy">
+        <img src="img/skin-dark-ocean.jpg" alt="Dark ocean waves skin" loading="lazy">
+        <img src="img/skin-cosmic.jpg" alt="Blue cosmic cracked skin design" loading="lazy">
+        <img src="img/skin-neon-leaf.jpg" alt="Neon green leaves skin" loading="lazy">
+        <img src="img/skin-neon-tri.jpg" alt="Neon teal triangles skin" loading="lazy">
+        <img src="img/skin-cracked-glass.jpg" alt="Cracked glass blue skin" loading="lazy">
+      </div>
+    </div>
+    <div>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:20px;">We precision-cut vinyl skins for any phone model, laptop brand, tablet, gaming console, or flat surface. Choose from our catalog designs (samples shown) or send your own artwork. Applied cleanly with no bubbles, and removes without residue.</p>
+      <table class="price-table">
+        <tr><th>Product</th><th>Price</th></tr>
+        <tr><td>Phone skin (full wrap, any model)</td><td>Ksh 600 – 1,200</td></tr>
+        <tr><td>Phone skin — custom design / your artwork</td><td>Ksh 900 – 1,500</td></tr>
+        <tr><td>Laptop skin — 13" to 15"</td><td>Ksh 900 – 1,800</td></tr>
+        <tr><td>Laptop skin — custom design</td><td>Ksh 1,200 – 2,200</td></tr>
+        <tr><td>Tablet / iPad skin</td><td>Ksh 700 – 1,400</td></tr>
+        <tr><td>Gaming console skin (PS5, Xbox, etc.)</td><td>Ksh 1,500 – 3,000</td></tr>
+        <tr><td>Surface / panel (custom size)</td><td>Ksh per sq. ft — quote on WhatsApp</td></tr>
+      </table>
+      <div class="note"><strong>Delivery:</strong> Phone and laptop skins ship nationwide. WhatsApp your device model and preferred design — we cut and deliver.</div>
+      <div class="order-btn" style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20a%20skin.%20My%20device%20is%3A" target="_blank" rel="noopener">Order a Skin</a>
+        <a class="btn btn-outline btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20have%20a%20custom%20skin%20design" target="_blank" rel="noopener">Custom Design</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 06 BIKE DECALS -->
+<div class="ps" id="bike-decals" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:100%;padding:56px 0;">
+<div class="ps" style="padding-bottom:0;">
+  <div class="ps-header"><span class="ps-num">06</span><h2>Bicycle Rim Decals & Frame Wraps</h2></div>
+  <div class="ps-body rev">
+    <div>
+      <div class="photo-grid wide">
+        <img src="img/bike-rim-1.jpg" alt="CORIMA holographic bicycle rim decal set — Kee Whole Nairobi" loading="lazy">
+        <img src="img/bike-rim-2.jpg" alt="ENVE bicycle rim decals black road wheel — Kee Whole" loading="lazy">
+      </div>
+    </div>
+    <div>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:20px;">We cut and apply custom vinyl decals for bicycle rims, frames, and components. From matching rim decal sets to full frame wraps that completely transform your bike's look. Road, gravel, MTB, and urban bikes all supported. Holographic, matte, gloss, and custom colour finishes available.</p>
+      <table class="price-table">
+        <tr><th>Product</th><th>Price</th></tr>
+        <tr><td>Rim decal set (both wheels, standard)</td><td>Ksh 2,000 – 3,500</td></tr>
+        <tr><td>Rim decal set — holographic / chrome finish</td><td>Ksh 3,000 – 5,000</td></tr>
+        <tr><td>Custom rim decals (name / brand / design)</td><td>Ksh 2,500 – 4,500</td></tr>
+        <tr><td>Frame decals — partial (top tube, down tube)</td><td>Ksh 1,800 – 3,500</td></tr>
+        <tr><td>Frame decals — full set (all tubes)</td><td>Ksh 3,500 – 6,000</td></tr>
+        <tr><td>Full frame wrap (all tubes, forks)</td><td>Ksh 7,000 – 14,000</td></tr>
+        <tr><td>Race number / event decals</td><td>Ksh 500 – 1,500</td></tr>
+      </table>
+      <div class="note"><strong>Cycling community:</strong> We're active in Nairobi's cycling scene. Custom team kits, club branding, and event number plates available — contact us for bulk orders.</div>
+      <div class="order-btn"><a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20want%20bike%20decals%20or%20a%20frame%20wrap.%20My%20bike%20is%3A" target="_blank" rel="noopener">Order Bike Decals</a></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- 07 BIKE ACCESSORIES -->
+<div class="ps" id="bike-accessories" style="padding-top:56px;">
+  <div class="ps-header"><span class="ps-num">07</span><h2>Bike Accessories</h2></div>
+  <div class="ps-body">
+    <div style="background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:280px;text-align:center;gap:12px;">
+      <div style="font-size:2.8rem;">🚴</div>
+      <h3 style="font-size:1.1rem;">Photos coming soon</h3>
+      <p style="color:var(--dim);font-size:.88rem;">WhatsApp to see current stock — we carry lights, pedals, racks and more</p>
+      <a class="btn btn-outline btn-sm" href="https://wa.me/254746432962?text=Hi%2C%20what%20bike%20accessories%20do%20you%20have%20in%20stock%3F" target="_blank" rel="noopener">Ask What's In Stock</a>
+    </div>
+    <div>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:20px;">We stock cycling accessories suited for Nairobi's road and gravel cycling community — priced fairly without the sports store markup.</p>
+      <table class="price-table">
+        <tr><th>Product</th><th>Price</th></tr>
+        <tr><td>Front + rear LED light set</td><td>Ksh 900 – 2,500</td></tr>
+        <tr><td>ROCKBROS bike light (USB rechargeable)</td><td>Ksh 1,500 – 3,000</td></tr>
+        <tr><td>Platform pedals (alloy)</td><td>Ksh 1,200 – 3,500</td></tr>
+        <tr><td>Clipless pedals (SPD compatible)</td><td>Ksh 2,500 – 5,500</td></tr>
+        <tr><td>Seat cover / saddle bag</td><td>Ksh 800 – 2,000</td></tr>
+        <tr><td>Roof bike carrier / rack</td><td>From Ksh 5,500</td></tr>
+        <tr><td>Bike stickers (misc branding)</td><td>Ksh 300 – 1,200</td></tr>
+      </table>
+      <div class="note"><strong>Stock varies</strong> — WhatsApp to confirm what's currently available. New accessories added regularly.</div>
+      <div class="order-btn"><a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20I%20need%20bike%20accessories.%20What%20do%20you%20have%3F" target="_blank" rel="noopener">Ask About Bike Gear</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- 08 CAR ACCESSORIES -->
+<div class="ps" id="accessories" style="background:var(--panel);border-top:1px solid var(--line);max-width:100%;padding:56px 0 80px;">
+<div class="ps" style="padding-bottom:0;">
+  <div class="ps-header"><span class="ps-num">08</span><h2>Other Car Accessories</h2></div>
+  <div class="ps-body rev">
+    <div style="background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:260px;text-align:center;gap:12px;">
+      <div style="font-size:2.6rem;">🔧</div>
+      <h3>Stock changes regularly</h3>
+      <p style="color:var(--dim);font-size:.88rem;">WhatsApp us to find out exactly what's available today</p>
+      <a class="btn btn-outline btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20what%20car%20accessories%20are%20in%20stock%3F" target="_blank" rel="noopener">Ask What's In Stock</a>
+    </div>
+    <div>
+      <p style="color:var(--dim);font-size:.92rem;line-height:1.75;margin-bottom:20px;">General car accessories to complement your setup — from steering wheel remotes to interior add-ons. Free installation included on most items.</p>
+      <table class="price-table">
+        <tr><th>Product</th><th>Price</th></tr>
+        <tr><td>Universal wireless steering wheel remote</td><td>Ksh 3,500 (free install)</td></tr>
+        <tr><td>Car air freshener (premium)</td><td>Ksh 400 – 1,200</td></tr>
+        <tr><td>Dash cam (basic)</td><td>Ksh 3,500 – 7,000</td></tr>
+        <tr><td>Interior LED ambient lighting kit</td><td>Ksh 1,200 – 3,500</td></tr>
+        <tr><td>Phone holder / mount</td><td>Ksh 600 – 1,800</td></tr>
+        <tr><td>Car organiser / seat back pocket</td><td>Ksh 800 – 2,000</td></tr>
+      </table>
+      <div class="note"><strong>Note:</strong> Prices and availability change with stock. WhatsApp us before visiting to confirm we have what you need.</div>
+      <div class="order-btn"><a class="btn btn-red btn-sm" href="https://wa.me/254746432962?text=Hi%20Kee%20Whole%2C%20what%20car%20accessories%20do%20you%20have%20in%20stock%3F" target="_blank" rel="noopener">Ask What's in Stock</a></div>
+    </div>
+  </div>
+</div>
+</div>
+
+</main>
+<footer>
+  <div class="footer-logo"><img src="img/logo.png" alt="Kee Whole" style="height:60px;width:auto;"></div>
+  <p>Cars. Bikes. Passion. · Parklands, Nairobi, Kenya</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="what-we-offer.html">What We Offer</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+  <p style="margin-top:16px;">© <span id="yr"></span> Kee Whole.</p>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
